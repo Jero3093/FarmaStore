@@ -1,0 +1,659 @@
+*{  
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-image: linear-gradient( #85FFBD, #FFFB7D);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 1px;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+    background: linear-gradient( #85FFBD, #FFFB7D);
+}
+
+::-webkit-scrollbar{
+    height: 10px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #75fd71;
+    border-radius: 15px;
+}
+
+/*----------------
+    Nav Bar
+-----------------*/
+.contenedor-nav nav{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    background-color: #85FFBD;
+    z-index: 1;
+}
+
+.logo-pagina{
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+}
+
+.titulo-pagina{
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 30px;
+}
+
+.barra-busqueda{
+    background-color: transparent;
+    width: 400px;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid grey;
+    outline: none;
+    padding: 15px;
+    position: absolute;
+    left: 350px;
+    bottom: 25px;
+    font-size: 18px;
+}
+
+.barra-busqueda:hover{
+    background-color: rgb(179, 179, 179);
+    border-color: black;
+    color: black;
+}
+
+.nav-items{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 100px;
+    margin-top: 20px;
+}
+
+.items{
+    text-decoration: none;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.items:hover{
+    background-color: #20ee80;
+    border-radius: 25px;
+}
+/*------------------------------
+/*------------------
+    Productos
+-------------------*/
+/*--Principal--*/
+.producto-principal{
+    background-color: white;
+    width: 800px;
+    border-radius: 15px;
+    height: 250px;
+    position: relative;
+    top: 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    filter: drop-shadow(0 0 3px black);
+    z-index: -1;
+}
+
+.img-prod-principal{
+    width: 250px;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    object-fit: contain;
+}
+
+.nombre-prod-principal{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 15px;
+    color: black;
+    letter-spacing: 1px;
+}
+
+.descripcion-prod-principal{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(66, 66, 66);
+    position: absolute;
+    right: 30px;
+    top: 60px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    width: 450px;
+    line-height: 25px;
+}
+
+.precio-principal{
+    color: rgb(0, 196, 0);
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    left: 300px;
+    bottom: 10px;
+    padding: 15px;
+}
+
+.boton-compra{
+    width: 250px;
+    height: 50px;
+    position: absolute;
+    background-color: rgb(0, 175, 0);
+    border: none;
+    border-radius: 15px;
+    bottom: 10px;
+    right: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icono-prod{
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    margin-left: 50px;
+}
+
+.texto-boton{
+    color: white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.boton-compra:hover{
+    background-color: rgb(0, 112, 0);
+}
+/*--Secundarios--*/
+.productos-secundarios{
+    background-color: transparent;
+    display: flex;
+    gap: 10px;
+    position: relative;
+    top: 200px;
+    left: 10px;
+    width: 900px;
+    height: 180px;
+    margin: 0 auto;
+    z-index: -1;
+    border: none;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.secundarios{
+    width: 200px;
+    height: 150px;
+    background-color: white;
+    border-radius: 15px;
+    border: none;
+}
+
+.img-secundarios{
+    width: 200px;
+    height: 150px;
+    border-radius: 15px;
+    object-fit: contain;
+}
+
+.img-secundarios:hover{
+    filter: blur(5px);
+}
+
+.nombre-secundarios{
+    position: relative;
+    bottom: 70px;
+    left: 15px;
+    color: black;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.precio-secundarios{
+    position: relative;
+    bottom: 70px;
+    left: 90px;
+    color: rgb(0, 247, 0);
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*-------------------------*/
+/*---------------
+    Remedios
+--------------*/
+.contenedor-remedios{
+    z-index: -1;
+    position: relative;
+    top: 460px;
+    height: 10px;
+}
+.remedios{
+    margin: 0 auto;
+    position: relative;
+    top: -200px;
+    z-index: -1;
+    width: 750px;
+    height: 180px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.img-remedio{
+    width: 150px;
+    height: 150px;
+    filter: drop-shadow(0 0 2px black);
+    position: absolute;
+    top: 15px;
+    left: 0px;
+    object-fit: contain;
+}
+
+.nombre-remedio{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    position: absolute;
+    left: 140px;
+    top: 10px;
+}
+
+.descripcion-remedio{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(102, 102, 102);
+    letter-spacing: 1px;
+    font-weight: lighter;
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    line-height: 30px;
+    width: 470px;
+}
+
+.precio-remedio{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 140px;
+    color: rgb(0, 196, 0);
+    font-weight: bold;
+}
+
+.boton-compra-remedio{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: none;
+    background-color: #20ee20;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+}
+
+.boton-compra-remedio:hover{
+    background-color: rgb(0, 112, 0);
+}
+
+.icono-carrito-remedio{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+/*---------------------------------*/
+/*---------------
+    Cremas
+--------------*/
+.contenedor-cremas{
+    background-color: transparent;
+    display: flex;
+    gap: 10px;
+    position: relative;
+    top: 2300px;
+    left: 10px;
+    width: 900px;
+    height: 180px;
+    margin: 0 auto;
+    z-index: -1;
+    border: none;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.cremas{
+    width: 200px;
+    height: 150px;
+    background-color: white;
+    border-radius: 15px;
+    border: none;
+}
+
+.img-cremas{
+    width: 200px;
+    height: 150px;
+    border-radius: 15px;
+    object-fit: contain;
+}
+
+.img-cremas:hover{
+    filter: blur(5px);
+}
+
+.nombre-cremas{
+    position: relative;
+    bottom: 70px;
+    left: 15px;
+    color: black;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.precio-cremas{
+    position: relative;
+    bottom: 70px;
+    left: 90px;
+    color: rgb(0, 247, 0);
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*--------------------------------*/
+/*--------------------
+    Descripcion
+---------------------*/
+.contenedor-descripcion{
+    position: relative;
+    background-color: rgb(199, 225, 255);
+    width: 100%;
+    margin: 0 auto;
+    height: 30vh;
+    bottom: -2350px;
+}
+
+.contenedor-logo-nombre{
+    display: flex;
+    flex-direction: row;
+    width: 50px;
+}
+
+.logo-descripcion{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+.nombre-descripcion{
+    position: absolute;
+    left: 150px;
+    top: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    border-right: 2px solid black;
+    padding: 20px;
+}
+
+.contenedor-items-descripcion{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    left: 370px;
+    top: 40px;
+}
+
+.items-descripcion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.descripcion-img{
+    width: 45px;
+    height: 45px;
+}
+
+.descripcion-item{
+    padding: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*------------------------------*/
+/*----------------
+    Responsive
+-----------------*/
+@media screen and (max-width:1181px){ /*-- Estilo Responvie Pantalla mediana Desktop--*/
+    body{
+        overflow-x: hidden;
+    }
+
+    .barra-busqueda{
+        display: none;
+    }
+
+    /*--Menu Desplegable--*/ 
+    .items{
+        display: none;
+    }
+
+    .item-menu{
+        display: block;
+    }
+
+    #contenedor-menu{
+        position: absolute;
+        top: 91px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: black;
+        position: fixed;
+        display: none;
+    }
+
+    .input-menu-desplegable{
+        position: absolute;
+        top: 10px;
+        left: 20%;
+        border-radius: 20px;
+        height: 50px;
+        width: 250px;
+        background-color: rgb(179, 179, 179);
+        border-color: black;
+        color: black;
+        padding: 5px;
+    }
+
+    .item-menu-desplegable{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        position: relative;
+        top: 100px;
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .item-menu-desplegable:hover{
+        background-color: #20ee80;
+        border-radius: 25px;
+    }
+
+    /*--Producto Principal--*/
+    .producto-principal{
+        background-color: white;
+        width: 800px;
+        border-radius: 15px;
+        height: 250px;
+        position: relative;
+        top: 100px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        filter: drop-shadow(0 0 3px black);
+        z-index: -1;
+    }
+}
+
+@media screen and (max-width:902px){ /*--Estilo Responsive Tablet--*/
+    /*--Producto Principal--*/
+    .producto-principal{
+        width: 350px;
+        height: 550px;
+        flex-direction: column;
+    }
+
+    .img-prod-principal{
+        object-fit: cover;
+        width: 100%;
+        height: 250px;
+        border-radius: 15px 15px 0 0 ;
+    }
+
+    .descripcion-prod-principal{
+        width: 300px;
+        top: 310px;
+        font-size: 16px;
+    }
+    
+    .precio-principal{
+        bottom: 55px;
+        left: 10px;
+    }
+
+    .productos-secundarios{
+        width: 100%;
+    }
+
+
+    /*--Remedios--*/
+    .contenedor-remedios{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 25px;
+        margin: 0 auto;
+    }
+
+    .remedios{
+        width: 250px;
+        height: 350px;
+    }
+    
+    .nombre-remedio{
+        top: 35px;
+    }
+
+    .descripcion-remedio{
+        width: 200px;
+        line-height: 20px;
+        position: relative;
+        top: 170px;
+        left: 15px;
+    }
+
+    .precio-remedio{
+        top: 130px;
+    }
+
+    .boton-compra-remedio{
+        position: absolute;
+        top: 270px;
+    }
+
+    /*--Cremas--*/
+    .contenedor-cremas{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:414px){ /*--Estilo Responsive Mobile--*/
+    body{
+        box-sizing: border-box;
+        background: linear-gradient(#85FFBD, rgb(255, 255, 79) 200%);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    /*--Menu--*/
+    .nav-items{
+        right: 50px;
+        top: 3px;
+    }
+
+    #contenedor-menu{
+        right: 100px;
+    }
+
+    /*--Producto Principal--*/
+    .producto-principal{
+        width: 350px;
+        height: 550px;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    /*--Productos Secundarios--*/
+    .productos-secundarios{
+        max-width: 380px;
+    }
+
+    /*--Remedios--*/
+    .contenedor-remedios{
+        grid-template-columns: repeat(1, 10px);
+        position: absolute;
+        top: 1170px;
+        left: 80px;
+    }
+
+    /*--Cremas--*/
+    .contenedor-cremas{
+        top: 4000px;
+        width: 380px;
+    }
+    
+    /*--Descripcion--*/
+    .contenedor-descripcion{
+        width: 100%;
+        top: 4050px;
+        height: 350px;
+    }
+
+    .nombre-descripcion{
+        border-right: none;
+    }
+
+    .contenedor-items-descripcion{
+        display: flex;
+        flex-direction: column;
+        left: 50px;
+        top: 200px;
+    }
+}

@@ -1,0 +1,352 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/FarmaStore/logo.png" type="img/png">
+    <link rel="stylesheet" href="style.css">
+    <title>FarmaStore</title>
+</head>
+<body>
+    <div class="contenedor-nav">
+        <nav>
+            <img src="/FarmaStore/logo.png" class="logo-pagina">
+            <p class="titulo-pagina">FarmaStore</p>
+            <input type="search" class="barra-busqueda" placeholder="Busca algun Producto">
+            <div class="nav-items">
+                <a href="#" class="items item-menu" onclick="mostrar_menu();" ondblclick="ocultar_menu();">Menu</a>
+                <a href="#" class="items">Carrito</a>
+                <a href="#" class="items">Recomendaciones</a>
+                <a href="#" class="items">Ayuda</a>
+            </div>
+        </nav>
+    </div>
+
+        <div id="contenedor-menu">
+            <input type="search" class="input-menu-desplegable" placeholder="Busca algun Producto">
+            <a href="#" class="item-menu-desplegable">Carrito</a>
+            <a href="#" class="item-menu-desplegable">Recomendaciones</a>
+            <a href="#" class="item-menu-desplegable">Ayuda</a>
+        </div>
+
+
+        <div class="producto-principal">
+            <img src="/FarmaStore/Perfumes/perfume1.jpg" class="img-prod-principal">
+            <p class="nombre-prod-principal">Sauvage</p>
+            <p class="descripcion-prod-principal"> 
+                Sauvage (Wild en francés) es una fragancia en la que “la frescura extrema se colorea 
+                con cálidos matices orientales y cuya belleza salvaje cobra vida en la piel”.
+            </p>
+            <p class="precio-principal">$150.99</p>
+            <button class="boton-compra">
+                <img src="/FarmaStore/icono carrito.png" class="icono-prod">
+                <p class="texto-boton">Add to Cart</p>
+            </button>
+        </div><!--Cierre Producto Principal-->
+    
+        <div class="productos-secundarios">
+            <div class="secundarios">
+                <img src="/FarmaStore/Perfumes/perfume2.png" class="img-secundarios">
+                <p class="nombre-secundarios">Polo Blue</p>
+                <p class="precio-secundarios">$120.99</p>
+            </div>
+
+            <div class="secundarios">
+                <img src="/FarmaStore/Perfumes/perfume3.png" class="img-secundarios">
+                <p class="nombre-secundarios">Sephora</p>
+                <p class="precio-secundarios">$120.99</p>
+            </div>
+
+            <div class="secundarios">
+                <img src="/FarmaStore/Perfumes/perfume4.png" class="img-secundarios">
+                <p class="nombre-secundarios">Her Secret</p>
+                <p class="precio-secundarios">$120.99</p>
+            </div>
+
+            <div class="secundarios">
+                <img src="/FarmaStore/Perfumes/perfume5.png" class="img-secundarios">
+                <p class="nombre-secundarios">Sephora</p>
+                <p class="precio-secundarios">$120.99</p>
+            </div>
+
+            <div class="secundarios">
+                <img src="/FarmaStore/Perfumes/perfume6.jpg" class="img-secundarios">
+                <p class="nombre-secundarios">Sephora</p>
+                <p class="precio-secundarios">$120.99</p>
+            </div>
+
+            <div class="secundarios">
+                <img src="/FarmaStore/Perfumes/perfume7.jpg" class="img-secundarios">
+                <p class="nombre-secundarios">Sephora</p>
+                <p class="precio-secundarios">$120.99</p>
+            </div>
+
+            <div class="secundarios">
+                <img src="/FarmaStore/Perfumes/perfume8.jpg" class="img-secundarios">
+                <p class="nombre-secundarios">Sephora</p>
+                <p class="precio-secundarios">$120.99</p>
+            </div>
+
+            <div class="secundarios">
+                <img src="/FarmaStore/Perfumes/perfume9.jpg" class="img-secundarios">
+                <p class="nombre-secundarios">Sephora</p>
+                <p class="precio-secundarios">$120.99</p>
+            </div>
+
+            <div class="secundarios">
+                <img src="/FarmaStore/Perfumes/perfume10.jpg" class="img-secundarios">
+                <p class="nombre-secundarios">Sephora</p>
+                <p class="precio-secundarios">$120.99</p>
+            </div>
+
+            <div class="secundarios">
+                <img src="/FarmaStore/Perfumes/perfume11.jpg" class="img-secundarios">
+                <p class="nombre-secundarios">Sephora</p>
+                <p class="precio-secundarios">$120.99</p>
+            </div>
+
+            <div class="secundarios">
+                <img src="/FarmaStore/Perfumes/perfume12.jpg" class="img-secundarios">
+                <p class="nombre-secundarios">Sephora</p>
+                <p class="precio-secundarios">$120.99</p>
+                </div>
+
+            <div class="secundarios">
+                <img src="/FarmaStore/Perfumes/perfume13.jpg" class="img-secundarios">
+                <p class="nombre-secundarios">Sephora</p>
+                <p class="precio-secundarios">$120.99</p>
+            </div>
+        </div><!--Cierre Contenedor Producto Secundario-->
+
+            <div class="contenedor-remedios">
+                <div class="remedios">
+                    <img src="/FarmaStore/Remedios/remedio1.png" class="img-remedio">
+                    <p class="nombre-remedio">Perifar Grip</p>
+                    <p class="descripcion-remedio">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Incidunt ipsam culpa ut pariatur necessitatibus eveniet.
+                    </p>
+                    <p class="precio-remedio">$100.99</p>
+                    <button class="boton-compra-remedio">
+                        <img src="/FarmaStore/icono carrito.png" class="icono-carrito-remedio">
+                    </button>
+                </div>
+
+                <div class="remedios">
+                    <img src="/FarmaStore/Remedios/remedio2.png" class="img-remedio">
+                    <p class="nombre-remedio">Actron Plus</p>
+                    <p class="descripcion-remedio">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Incidunt ipsam culpa ut pariatur necessitatibus eveniet.
+                    </p>
+                    <p class="precio-remedio">$120.99</p>
+                    <button class="boton-compra-remedio">
+                        <img src="/FarmaStore/icono carrito.png" class="icono-carrito-remedio">
+                    </button>
+                </div>
+
+                <div class="remedios">
+                    <img src="/FarmaStore/Remedios/remedio3.png" class="img-remedio">
+                    <p class="nombre-remedio">Abrilar</p>
+                    <p class="descripcion-remedio">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Incidunt ipsam culpa ut pariatur necessitatibus eveniet.
+                    </p>
+                    <p class="precio-remedio">$130.99</p>
+                    <button class="boton-compra-remedio">
+                        <img src="/FarmaStore/icono carrito.png" class="icono-carrito-remedio">
+                    </button>
+                </div>
+
+                <div class="remedios">
+                    <img src="/FarmaStore/Remedios/remedio4.png" class="img-remedio">
+                    <p class="nombre-remedio">Uvasal</p>
+                    <p class="descripcion-remedio">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Incidunt ipsam culpa ut pariatur necessitatibus eveniet.
+                    </p>
+                    <p class="precio-remedio">$140.99</p>
+                    <button class="boton-compra-remedio">
+                        <img src="/FarmaStore/icono carrito.png" class="icono-carrito-remedio">
+                    </button>
+                </div>
+
+                <div class="remedios">
+                    <img src="/FarmaStore/Remedios/remedio5.png" class="img-remedio">
+                    <p class="nombre-remedio">Actron 600</p>
+                    <p class="descripcion-remedio">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Incidunt ipsam culpa ut pariatur necessitatibus eveniet.
+                    </p>
+                    <p class="precio-remedio">$150.99</p>
+                    <button class="boton-compra-remedio">
+                        <img src="/FarmaStore/icono carrito.png" class="icono-carrito-remedio">
+                    </button>
+                </div>
+
+                <div class="remedios">
+                    <img src="/FarmaStore/Remedios/remedio6.png" class="img-remedio">
+                    <p class="nombre-remedio">Ibupirac</p>
+                    <p class="descripcion-remedio">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Incidunt ipsam culpa ut pariatur necessitatibus eveniet.
+                    </p>
+                    <p class="precio-remedio">$160.99</p>
+                    <button class="boton-compra-remedio">
+                        <img src="/FarmaStore/icono carrito.png" class="icono-carrito-remedio">
+                    </button>
+                </div>
+
+                <div class="remedios">
+                    <img src="/FarmaStore/Remedios/remedio7.png" class="img-remedio">
+                    <p class="nombre-remedio">Bisolvon</p>
+                    <p class="descripcion-remedio">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Incidunt ipsam culpa ut pariatur necessitatibus eveniet.
+                    </p>
+                    <p class="precio-remedio">$170.99</p>
+                    <button class="boton-compra-remedio">
+                        <img src="/FarmaStore/icono carrito.png" class="icono-carrito-remedio">
+                    </button>
+                </div>
+
+                <div class="remedios">
+                    <img src="/FarmaStore/Remedios/remedio8.png" class="img-remedio">
+                    <p class="nombre-remedio">Aspirina</p>
+                    <p class="descripcion-remedio">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Incidunt ipsam culpa ut pariatur necessitatibus eveniet.
+                    </p>
+                    <p class="precio-remedio">$180.99</p>
+                    <button class="boton-compra-remedio">
+                        <img src="/FarmaStore/icono carrito.png" class="icono-carrito-remedio">
+                    </button>
+                </div>
+
+                <div class="remedios">
+                    <img src="/FarmaStore/Remedios/remedio9.png" class="img-remedio">
+                    <p class="nombre-remedio">Ridona</p>
+                    <p class="descripcion-remedio">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Incidunt ipsam culpa ut pariatur necessitatibus eveniet.
+                    </p>
+                    <p class="precio-remedio">$180.99</p>
+                    <button class="boton-compra-remedio">
+                        <img src="/FarmaStore/icono carrito.png" class="icono-carrito-remedio">
+                    </button>
+                </div>
+
+                <div class="remedios">
+                    <img src="/FarmaStore/Remedios/remedio10.png" class="img-remedio">
+                    <p class="nombre-remedio">Sertal Forte</p>
+                    <p class="descripcion-remedio">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Incidunt ipsam culpa ut pariatur necessitatibus eveniet.
+                    </p>
+                    <p class="precio-remedio">$190.99</p>
+                    <button class="boton-compra-remedio">
+                        <img src="/FarmaStore/icono carrito.png" class="icono-carrito-remedio">
+                    </button>
+                </div>
+            </div><!--Cierre Contenedor Remedios-->
+            
+            <div class="contenedor-cremas">
+                <div class="cremas">
+                    <img src="/FarmaStore/Cremas/crema1.jpg" class="img-cremas">
+                    <p class="nombre-cremas">Biotherm</p>
+                    <p class="precio-cremas">$120.99</p>
+                </div>
+    
+                <div class="cremas">
+                    <img src="/FarmaStore/Cremas/crema2.jpg" class="img-cremas">
+                    <p class="nombre-cremas">Biotherm</p>
+                    <p class="precio-cremas">$120.99</p>
+                </div>
+    
+                <div class="cremas">
+                    <img src="/FarmaStore/Cremas/crema3.jpg" class="img-cremas">
+                    <p class="nombre-cremas">Olay</p>
+                    <p class="precio-cremas">$120.99</p>
+                </div>
+    
+                <div class="cremas">
+                    <img src="/FarmaStore/Cremas/crema4.jpg" class="img-cremas">
+                    <p class="nombre-cremas">Clinique</p>
+                    <p class="precio-cremas">$120.99</p>
+                </div>
+    
+                <div class="cremas">
+                    <img src="/FarmaStore/Cremas/crema5.jpg" class="img-cremas">
+                    <p class="nombre-cremas">Clinique</p>
+                    <p class="precio-cremas">$120.99</p>
+                </div>
+    
+                <div class="cremas">
+                    <img src="/FarmaStore/Cremas/crema6.jpg" class="img-cremas">
+                    <p class="nombre-cremas">Biotherm</p>
+                    <p class="precio-cremas">$120.99</p>
+                </div>
+    
+                <div class="cremas">
+                    <img src="/FarmaStore/Cremas/crema7.jpg" class="img-cremas">
+                    <p class="nombre-cremas">Polo Blue</p>
+                    <p class="precio-cremas">$120.99</p>
+                </div>
+    
+                <div class="cremas">
+                    <img src="/FarmaStore/Cremas/crema8.jpg" class="img-cremas">
+                    <p class="nombre-cremas">Polo Blue</p>
+                    <p class="precio-cremas">$120.99</p>
+                </div>
+    
+                <div class="cremas">
+                    <img src="/FarmaStore/Cremas/crema9.jpg" class="img-cremas">
+                    <p class="nombre-cremas">Caudalie</p>
+                    <p class="precio-cremas">$120.99</p>
+                </div>
+    
+                <div class="cremas">
+                    <img src="/FarmaStore/Cremas/crema10.jpg" class="img-cremas">
+                    <p class="nombre-cremas">Polo Blue</p>
+                    <p class="precio-cremas">$120.99</p>
+                </div>
+    
+                <div class="cremas">
+                    <img src="/FarmaStore/Cremas/crema11.jpg" class="img-cremas">
+                    <p class="nombre-cremas">Polo Blue</p>
+                    <p class="precio-cremas">$120.99</p>
+                </div>
+    
+                <div class="cremas">
+                    <img src="/FarmaStore/Cremas/crema12.jpg" class="img-cremas">
+                    <p class="nombre-cremas">Polo Blue</p>
+                    <p class="precio-cremas">$120.99</p>
+                </div>
+            </div><!--Cierre Contenedor Cremas-->
+           
+            <div class="contenedor-descripcion">
+                <div class="contenedor-logo-nombre">
+                    <img src="/FarmaStore/icono descripcion.png" class="logo-descripcion">
+                    <p class="nombre-descripcion">FarmaStore</p>
+                </div>
+
+                <div class="contenedor-items-descripcion">
+                    <div class="items-descripcion">
+                        <img src="/FarmaStore/icono telefono.png" class="descripcion-img">
+                        <p class="descripcion-item">+598768249</p>
+                    </div>
+                    <div class="items-descripcion">
+                        <img src="/FarmaStore/icono ubicacion.png" class="descripcion-img">
+                        <p class="descripcion-item">Salto, Uruguay</p>
+                    </div>
+                </div>
+
+            </div><!--Cierre Contenedor Descripcion-->
+
+
+
+
+    <script src="style.js"></script>
+</body>
+</html>
